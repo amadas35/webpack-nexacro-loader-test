@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppVariables version="2.0">
+  <Datasets>
+    <Dataset id="gdsOpenList">
+      <ColumnInfo>
+        <Column id="code" type="STRING" size="256"/>
+        <Column id="caption" type="STRING" size="256"/>
+        <Column id="BTN_ID" type="STRING" size="256"/>
+        <Column id="BTN_EX_ID" type="STRING" size="256"/>
+      </ColumnInfo>
+    </Dataset>
+    <Dataset id="gdsLeftMenu">
+      <ColumnInfo>
+        <Column id="MENU_CD" type="STRING" size="256"/>
+        <Column id="UP_MENU_CD" type="STRING" size="256"/>
+        <Column id="MENU_NM" type="STRING" size="256"/>
+        <Column id="MENU_LVL" type="STRING" size="256"/>
+        <Column id="PGM_PATH" type="STRING" size="256"/>
+        <Column id="PGM_ID" type="STRING" size="256"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="MENU_CD">0000</Col>
+          <Col id="UP_MENU_CD">0</Col>
+          <Col id="MENU_LVL">0</Col>
+          <Col id="MENU_NM">데이터 통신</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0001</Col>
+          <Col id="UP_MENU_CD">0000</Col>
+          <Col id="MENU_NM">대용량 데이터</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">Data/RP_92291_poc03.xfdl</Col>
+          <Col id="MENU_LVL">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0002</Col>
+          <Col id="UP_MENU_CD">0000</Col>
+          <Col id="MENU_NM">화면예시2</Col>
+          <Col id="PGM_PATH">Base</Col>
+          <Col id="PGM_ID">work02.xfdl</Col>
+          <Col id="MENU_LVL">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0003</Col>
+          <Col id="UP_MENU_CD">0000</Col>
+          <Col id="MENU_NM">화면예시3</Col>
+          <Col id="PGM_PATH">Base</Col>
+          <Col id="PGM_ID">work03.xfdl</Col>
+          <Col id="MENU_LVL">1</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0100</Col>
+          <Col id="UP_MENU_CD">01</Col>
+          <Col id="MENU_NM">그리드</Col>
+          <Col id="MENU_LVL">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0101</Col>
+          <Col id="UP_MENU_CD">0100</Col>
+          <Col id="MENU_NM">자동크기계산</Col>
+          <Col id="MENU_LVL">1</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">Grid/calcSize.xfdl</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0102</Col>
+          <Col id="UP_MENU_CD">0100</Col>
+          <Col id="MENU_NM">세로스크롤성능 (huge node)</Col>
+          <Col id="MENU_LVL">1</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">Grid/scroll_performance.xfdl</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0103</Col>
+          <Col id="UP_MENU_CD">0100</Col>
+          <Col id="MENU_NM">세로스크롤성능 (lazy calcurate)</Col>
+          <Col id="MENU_LVL">1</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">Grid/scroll_performance_lazycalc.xfdl</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0200</Col>
+          <Col id="UP_MENU_CD">02</Col>
+          <Col id="MENU_NM">웹브라우저</Col>
+          <Col id="MENU_LVL">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">0201</Col>
+          <Col id="UP_MENU_CD">0200</Col>
+          <Col id="MENU_NM">window.open</Col>
+          <Col id="MENU_LVL">1</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">MSIE/AccessOpenerInPopup.xfdl</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">9900</Col>
+          <Col id="UP_MENU_CD">99</Col>
+          <Col id="MENU_NM">테스트</Col>
+          <Col id="MENU_LVL">0</Col>
+        </Row>
+        <Row>
+          <Col id="MENU_CD">9901</Col>
+          <Col id="UP_MENU_CD">9900</Col>
+          <Col id="MENU_NM">es2015</Col>
+          <Col id="MENU_LVL">1</Col>
+          <Col id="PGM_PATH">Test</Col>
+          <Col id="PGM_ID">ES/es2015.xfdl</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+    <Dataset id="gdsOpenMenu">
+      <ColumnInfo>
+        <Column id="MENU_CD" type="STRING" size="8"/>
+        <Column id="UP_MENU_CD" type="STRING" size="8"/>
+        <Column id="MENU_NM" type="STRING" size="50"/>
+        <Column id="MENU_LVL" type="BIGDECIMAL" size="22"/>
+        <Column id="PGM_PATH" type="STRING" size="200"/>
+        <Column id="PGM_ID" type="STRING" size="200"/>
+        <Column id="WINID" type="STRING" size="256"/>
+      </ColumnInfo>
+    </Dataset>
+    <Dataset id="gdsTest" collation="currentlocale" binddataobject="DataObject0" dataobjectpath="$">
+      <ColumnInfo>
+        <ConstColumn id="ConstColumn0" type="STRING" size="30" value="test &quot;quote string&quot;"/>
+        <ConstColumn id="ConstColumn1" type="STRING" size="30"/>
+        <Column id="color" datapath="@[0].color" type="STRING" size="256"/>
+        <Column id="value" datapath="@[0].value" type="STRING" size="256"/>
+        <Column id="Column0" type="STRING" size="256" prop="TEXT" sumtext="sum" description="desc"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="Column0">test</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+    <Dataset id="gdsTest2" binddataobject="DataObject1" dataobjectpath="$">
+      <ColumnInfo>
+        <Column id="Column0" type="STRING" size="256"/>
+        <Column id="Column1" type="STRING" size="256"/>
+        <Column id="key" datapath="$.key" type="STRING" size="256"/>
+        <Column id="key0" datapath="$.key" type="STRING" size="256"/>
+      </ColumnInfo>
+      <Rows>
+        <Row>
+          <Col id="Column0">123</Col>
+          <Col id="Column1">'single' \t\n&lt;tag&gt;  "double"</Col>
+        </Row>
+      </Rows>
+    </Dataset>
+  </Datasets>
+  <Variables>
+    <Variable id="Variable0" initval="test"/>
+    <Variable id="Variable1"/>
+  </Variables>
+  <DataObjects>
+    <DataObject id="DataObject0" enableevent="true" ondatachanged="DataObject0_ondatachanged">
+      <Contents><![CDATA[[
+	{
+		"color": "red",
+		"value": "#f00"
+	},
+	{
+		"color": "green",
+		"value": "#0f0"
+	},
+	{
+		"color": "blue",
+		"value": "#00f"
+	}
+]]]></Contents>
+    </DataObject>
+  </DataObjects>
+</AppVariables>

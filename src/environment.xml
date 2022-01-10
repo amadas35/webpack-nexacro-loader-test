@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ENV version="2.1">
+  <Environment themeid="theme::blue" datatyperule="2.0" httptimeout="3600" enableinspector="true" onerror="Environment_onerror">
+    <ScreenDefinition>
+      <Screen id="Desktop_screen" type="desktop"/>
+    </ScreenDefinition>
+    <Variables/>
+    <Cookies/>
+    <httpheader/>
+  </Environment>
+  <Script type="xscript5.1"><![CDATA[
+this.Environment_onerror = function(obj:nexacro.Environment,e:nexacro.ErrorEventInfo)
+{
+	trace(e.errormsg);
+};
+]]></Script>
+</ENV>

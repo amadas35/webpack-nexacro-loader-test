@@ -1,0 +1,50 @@
+﻿<!--[if gt IE 8]><!DOCTYPE html><!--<![endif]-->
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+	<meta name="viewport" content="user-scalable=1, initial-scale=1.0, width=device-width, target-densitydpi=device-dpi" />
+
+	<script type="text/javascript">
+	    window._popup = true;
+	</script>
+</head>
+<body>
+  <button onclick="verify_window()">verify</button>
+  
+  <script type="text/javascript">
+	window.nexacro = {};
+	nexacro._name = "popup";
+		
+	function verify_window()
+	{
+		var is_accessible_to_opener, emsg;
+		var parent_window = null;
+		
+		try {
+			parent_window = window.opener;
+			is_accessible_to_opener = (parent_window != null);
+		}
+		catch (e) {
+			is_accessible_to_opener = false;
+			emsg = e.toString();
+		}
+		
+		var strMsg = "This is '" + nexacro._name + "' window!\n";
+		strMsg += "- accessible to opener window : '" + is_accessible_to_opener + "'\n";
+		
+		if (is_accessible_to_opener)
+		{
+			strMsg += "- opener window's name is '" + parent_window.get_verify_value() + "'";
+		}
+		else
+		{
+			strMsg += "- error : '" + emsg + "'";
+		}
+		
+		alert(strMsg);
+	}
+
+  </script>
+</body>
+</html>

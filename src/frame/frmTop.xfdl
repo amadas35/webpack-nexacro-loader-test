@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="fm_top" width="1260" height="65" titletext="New Form">
+    <Layouts>
+      <Layout height="65" mobileorientation="landscape" width="1260">
+        <Static id="Static00" taborder="0" left="0" top="0" height="24" right="0" cssclass="sta_top_bg01"/>
+        <Static id="Static01" taborder="1" left="0" top="24" height="41" right="0" cssclass="sta_top_bg02"/>
+        <Static id="Static02" taborder="2" left="0" top="24" width="160" height="41" cssclass="sta_top_logo"/>
+        <Button id="Button00" taborder="3" text="상단메뉴01" left="190" top="24" width="120" height="40" cssclass="btn_top_menu" onclick="Button00_onclick"/>
+        <Button id="Button01" taborder="4" text="상단메뉴01" left="310" top="24" width="120" height="40" cssclass="btn_top_menu"/>
+        <Button id="Button02" taborder="5" text="상단메뉴01" left="430" top="24" width="120" height="40" cssclass="btn_top_menu"/>
+        <Button id="Button03" taborder="6" text="상단메뉴01" left="550" top="24" width="120" height="40" cssclass="btn_top_menu"/>
+        <Button id="Button04" taborder="7" text="상단메뉴01" left="670" top="24" width="120" height="40" cssclass="btn_top_menu"/>
+        <Static id="Static03" taborder="8" text="Hello! Hong Gil Dong" left="10" top="0" width="210" height="24" cssclass="sta_top_textWht"/>
+        <PopupMenu id="PopupMenu00" left="190" top="64" width="120" height="101" innerdataset="@ds_Popup" captioncolumn="Column0" idcolumn="Column2" levelcolumn="Column1"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_Popup">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">하위메뉴_1</Col>
+            <Col id="Column1">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_2</Col>
+            <Col id="Column1">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_2_1</Col>
+            <Col id="Column1">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_2_2</Col>
+            <Col id="Column1">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_2_3</Col>
+            <Col id="Column1">1</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_3</Col>
+            <Col id="Column1">0</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">하위메뉴_4</Col>
+            <Col id="Column1">0</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.PopupMenu00.trackPopupByComponent(this.Button00,0,41);
+};
+]]></Script>
+  </Form>
+</FDL>

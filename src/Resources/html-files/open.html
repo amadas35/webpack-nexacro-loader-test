@@ -1,0 +1,41 @@
+
+<html>
+  <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  </head>
+<body>
+	<p>
+	  This button will open window:
+	  <button id="popup" onclick="open_window()">Open</button>
+	</p>
+
+	<script type="text/javascript">
+		window.nexacro = {};
+		nexacro._name = "opener";
+		
+		function open_window()
+		{
+			var options = [
+				"showtitlebar=true",
+				"showstatusbar=false",
+				"top=500", 
+				"left=500",
+				"width=400",
+				"height=400",
+				"toolbar=no",
+				"location=no",
+				"directories=no",
+				"status=yes",
+				"menubar=no",
+				"scrollbars=no"
+			];
+			window.open("./popup.html", "_blank", options.join(','));
+		}
+		
+		function get_verify_value()
+		{
+			return nexacro._name;
+		}
+	</script>
+</body>
+</html>

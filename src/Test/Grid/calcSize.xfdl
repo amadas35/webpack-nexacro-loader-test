@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="calcSize" width="1280" height="720" titletext="New Form" onload="calcSize_onload">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Grid id="Grid00" taborder="0" left="5" top="42" bottom="5" binddataset="dsTest" autosizingtype="row" width="655" extendsizetype="row" onrowresized="Grid00_onrowresized" scrollbartype="default default">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="168"/>
+                <Column size="463"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="Element"/>
+                <Cell col="1" text="Description"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:Element"/>
+                <Cell col="1" text="bind:Description" wordWrap="char"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="btnLoadData" taborder="1" text="Load Test Data" left="105" top="9" width="95" height="26" onclick="btnLoadData_onclick"/>
+        <Radio id="rdoSizingType" taborder="2" left="287" top="12" width="105" height="20" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="1" text="aurosizing:row" value="2" direction="vertical">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">none</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">row</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Static id="labTime" taborder="3" text="load (ms)" left="555" top="9" width="52" height="26" textAlign="right"/>
+        <Static id="staLoadTime" taborder="4" left="610" top="9" width="50" height="26" border="1px solid gray" background="cornsilk" textAlign="center"/>
+        <Combo id="cbDataSize" taborder="5" left="5" top="9" width="95" height="26" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" value="1000" text="60000 row" index="3">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">60 row</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">10</Col>
+                <Col id="datacolumn">600 row</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">100</Col>
+                <Col id="datacolumn">6000 row</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1000</Col>
+                <Col id="datacolumn">60000 row</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Static id="Static00" taborder="6" text="autosizing:" left="208" top="9" width="72" height="26" padding="0px 0px 0px 2px" font="normal bold 10pt/normal &quot;Arial&quot;"/>
+        <CheckBox id="chkLazyCalc" taborder="7" text="lazy calcutate (reload)" left="397" top="12" width="143" height="20"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsProjectMeta">
+        <ColumnInfo>
+          <Column id="Element" type="STRING" size="256"/>
+          <Column id="Description" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Element">Project Title</Col>
+            <Col id="Description">The title (and any alternatives) for the dataset.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Description</Col>
+            <Col id="Description">A brief summary of the main aims and objectives of the research project (or alternative process) from which the data collection arose together with a brief summary description of the content of the dataset.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Subject</Col>
+            <Col id="Description">Keywords for the subject content of the dataset (qualified using e.g., the English Heritage NMR Monument Type Thesaurus or the MDA Object Type Thesaurus.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Coverage</Col>
+            <Col id="Description">This is both spatial and temporal coverage.
+
+For spatial coverage it should include the current and contemporary name(s) of the country, region, county, town or village covered by the data collection and, where possible, a standardised reference such as the Getty Thesaurus of Geographic Names[5] should be used. If names or administrative units were different during the time period covered by the data they should be recorded separately. Site coordinates can also be entered as a National grid reference in a number of different ways e.g., as a point (useful to describe a small project area via a central coordinate); as a line (e.g., at least 2 coordinates to represent the linear limits of the site); as a polygon (for a more complex site area, 3 or more coordinates are used to describe the boundaries). If applicable, the full postal code for the site can be included.
+
+For temporal coverage it should include the dates/period covered by the dataset (using existing thesauri where possible such as the RCHME Period List).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Creators</Col>
+            <Col id="Description">Details of the creator(s), compiler(s), funding agencies, or other bodies or people intellectually responsible for the data collection. Information should include forename, surname, affiliation, address, phone, fax, email, or URL.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Publisher</Col>
+            <Col id="Description">Details about any organisation which has published this data.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Contributors</Col>
+            <Col id="Description">Other individuals or organisations who have contributed to the resource.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Identifiers</Col>
+            <Col id="Description">Project or reference numbers used to identify the dataset.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Source</Col>
+            <Col id="Description">Any important earlier work(s) from which this resource is derived.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Dates</Col>
+            <Col id="Description">Dates indicating when the dataset was created, when the archaeological project was carried out, processing dates, or computerisation dates as appropriate.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Copyright</Col>
+            <Col id="Description">The name of the copyright holder for the dataset. If the collection was created during work by an employee, the copyright holder will normally be the employer. If the material is covered by a specific copyright (e.g., Crown copyright) please indicate this.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Relations</Col>
+            <Col id="Description">If the data collection was derived in whole or in part from published or unpublished sources, whether printed or machine-readable, this element should include references to the original material, details of where the sources are held and how they are identified there (e.g., by accession number). If the collection is derived from other sources include an indication of whether the data represents a complete or partial transcription/copy and the methodology used for its digitisation. Also include full references to any publications about or based upon the data collection.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Language</Col>
+            <Col id="Description">Indication of which language(s) the dataset is in (e.g., English, French, Spanish).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Resource Type</Col>
+            <Col id="Description">Whether the dataset is best described as primary data, processed data, an interpretation of data, or a final report.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Format</Col>
+            <Col id="Description">The format the data is saved in (e.g., WordPerfect 5.1, HTML, AutoCAD).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Basic Information</Col>
+            <Col id="Description">Basic metadata include association of a resource with a larger project, lifecycle status (e.g., draft, active, deleted), Language, Year Created, Abstract/Description and Physical Storage Location.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Bibliographic Metadata</Col>
+            <Col id="Description">Specific to documents, uses MODS metadata fields to describe resources.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Resource Creators</Col>
+            <Col id="Description">These fields are used to properly credit individuals and institutions for their contribution to the resource. “Role” refers to the individual’s main role for the resource (e.g., creator, editor, etc.).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Resource Specific or Agency Identifiers</Col>
+            <Col id="Description">Describes agency or project identifiers used (e.g., Smithsonian Trinomial, AZ State Museum—ASM—number).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Investigation Type(s)</Col>
+            <Col id="Description">Lists all investigation types relevant to the resource (e.g., Research Design, Site Monitoring, Data Recovery/Excavation).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Site Description Information</Col>
+            <Col id="Description">Includes Site Name, Site Type (controlled vocabulary), and keywords</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Material Type(s)</Col>
+            <Col id="Description">Artifact types covered by the resource (e.g., Ceramic, Fauna, Metal, Dating Sample).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Cultural Term(s)</Col>
+            <Col id="Description">Includes Culture (e.g., PaleoIndian, Archaic) and user created values.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Temporal Coverage</Col>
+            <Col id="Description">Includes Temporal Terms (e.g., Pueblo IV), Coverage Dates, Date Type (e.g., Calendar, Radiocarbon), Start/End Years and Description (e.g., Calibrated, Range of ± N years).</Col>
+          </Row>
+          <Row>
+            <Col id="Element">General Keyword(s)</Col>
+            <Col id="Description">User created values to describe aspects of the resource not covered by other metadata.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Spatial Terms</Col>
+            <Col id="Description">Includes Geographic Terms (e.g., Death Valley), Coordinates</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Resource Provider</Col>
+            <Col id="Description">The institution that authorized the resource to be archived and disseminated.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Individual and Institutional Roles</Col>
+            <Col id="Description">Name, Current Email Address, Institution and Role of those involved with the resource.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">File name</Col>
+            <Col id="Description">The name of the file e.g., report.doc</Col>
+          </Row>
+          <Row>
+            <Col id="Element">File format</Col>
+            <Col id="Description">The file format e.g., PDF/A or Open Office Document</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Software used to create the files</Col>
+            <Col id="Description">The software used to create the file e.g., Microsoft Word 2007</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Hardware used to create the files</Col>
+            <Col id="Description">The hardware used to create the file, this is more significant when files are created directly by survey equipment such as laser scanners or GPS devices.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Operating system used to create the files</Col>
+            <Col id="Description">The operating system under which the file was made e.g., Windows XP or Mac OS X 10.5.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Date of creation/last file update</Col>
+            <Col id="Description">When the file was made or updated.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">Processing history or Lineage</Col>
+            <Col id="Description">This element should be used to highlight relationships between files and whether a file is a source file or derived from another.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">UNIQUE_ID</Col>
+            <Col id="Description">Auto-generated unique ID e.g.,1234567</Col>
+          </Row>
+          <Row>
+            <Col id="Element">FILE_LOCATION</Col>
+            <Col id="Description">The file path i.e. directory and filename e.g., /adsdata/cottam_ba/jpg/fwking_plan.jpg</Col>
+          </Row>
+          <Row>
+            <Col id="Element">CHECKSUM_TYPE</Col>
+            <Col id="Description">The checksum algorithm used e.g., MD5, SHA-1, etc.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">CHECKSUM_VALUE</Col>
+            <Col id="Description">The checksum value generated by algorithm e.g., 578cbb18f73a885988426797bcab8770</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROJECT_ID</Col>
+            <Col id="Description">A unique project ID e.g., ADS-123</Col>
+          </Row>
+          <Row>
+            <Col id="Element">GENERATED</Col>
+            <Col id="Description">Date the checksum was created e.g., 16-May-2006</Col>
+          </Row>
+          <Row>
+            <Col id="Element">GENERATED_BY</Col>
+            <Col id="Description">Person who created the checksum e.g., Doe, J</Col>
+          </Row>
+          <Row>
+            <Col id="Element">LAST_AUDITED</Col>
+            <Col id="Description">The date at which the file was last checked or verified e.g., 16-May-2007</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_ID</Col>
+            <Col id="Description">Auto-generated unique ID e.g.,1234567</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROJECT_ID</Col>
+            <Col id="Description">A unique project ID e.g., ADS-123</Col>
+          </Row>
+          <Row>
+            <Col id="Element">SOURCE_FORMAT</Col>
+            <Col id="Description">The format of the original file e.g., .txt</Col>
+          </Row>
+          <Row>
+            <Col id="Element">DESTINATION_FORMAT</Col>
+            <Col id="Description">The destination format e.g., .shp</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_AGENT</Col>
+            <Col id="Description">Who did the processing e.g., Doe, J.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_COMMENTS</Col>
+            <Col id="Description">Comments relating to the process undertaken e.g., “referenced to WGS84'.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_START_DATE</Col>
+            <Col id="Description">Date that the process started e.g., 17-May-2007</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_COMPLETION_DATE</Col>
+            <Col id="Description">Date process completed e.g., 17-May-2007</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_DESCRIPTION</Col>
+            <Col id="Description">A description of the process e.g., “Import of XYZ data into ArcView for analytical purposes and dissemination as research outcome'.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_GUIDELINES</Col>
+            <Col id="Description">Any guidelines related to the process.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_HARDWARE_USED</Col>
+            <Col id="Description">Hardware used to process the file e.g., Viglen Genie Intel Pentium 4</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_SOFTWARE_USED</Col>
+            <Col id="Description">Software used to process the file e.g., ESRI Arcview 9.1</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_INPUT</Col>
+            <Col id="Description">Full file path of the source file e.g., /adsdata/pro-453/xyz/file.xyz</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_OUTPUT</Col>
+            <Col id="Description">Full file path of the output file e.g., /adsdata/pro-453/shp/file.shp</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_RESULT</Col>
+            <Col id="Description">Comments on the result of the processing e.g., “Success”.</Col>
+          </Row>
+          <Row>
+            <Col id="Element">PROCESS_TYPE</Col>
+            <Col id="Description">Description of the process carried out e.g., “Conversion – dissemination.”</Col>
+          </Row>
+          <Row>
+            <Col id="Element">DUMMY</Col>
+            <Col id="Description">Dummy</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsTest">
+        <ColumnInfo>
+          <Column id="Element" type="STRING" size="256"/>
+          <Column id="Description" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.btnLoadData_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.dsTest.clearData();
+	this.staLoadTime.set_text('');
+	
+	var sizingtype = this.rdoSizingType.value;
+	if (sizingtype == 1)
+	{
+		this.Grid00.set_autosizingtype("none");
+	}
+	else if (sizingtype == 2)
+	{
+		this.Grid00.set_autosizingtype("row");
+	}
+	
+	this.Grid00._lazy_calculate = !!this.chkLazyCalc.value;
+	
+	var data_size = this.cbDataSize.value;
+	
+	var _start, _end;
+	
+	_start = (new Date).getTime();
+	
+	this.dsTest.set_enableevent(false);
+	for (var i=0;i<data_size;i++)
+	{
+		this.dsTest.appendData(this.dsProjectMeta, true);
+	}
+	this.dsTest.set_enableevent(true);
+	_end = (new Date).getTime();
+	
+	this.staLoadTime.set_text((_end - _start) + '');
+};
+
+
+this.calcSize_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.chkLazyCalc.set_value(nexacro._lazy_calculate);
+};
+
+this.Grid00_onrowresized = function(obj:nexacro.Grid,e:nexacro.GridSizeChangedEventInfo)
+{
+	trace('Grid00_onrowresized');
+};
+
+]]></Script>
+  </Form>
+</FDL>

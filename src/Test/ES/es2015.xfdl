@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="es2015" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="Static00" taborder="0" text="Snippets" left="5" top="5" width="103" height="24" font="bold 16px/normal &quot;Arial&quot;,&quot;Malgun Gothic&quot;,&quot;Gulim&quot;"/>
+        <Grid id="Grid00" taborder="1" left="5" top="30" binddataset="dsSnippet" height="470" right="5" autosizingtype="row" extendsizetype="row" onexpanddown="Grid00_onexpanddown" onexpandup="Grid00_onexpandup">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="175"/>
+                <Column size="190"/>
+                <Column size="525"/>
+                <Column size="370"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="title"/>
+                <Cell col="1" text="sub"/>
+                <Cell col="2" text="snippet"/>
+                <Cell col="3" text="description"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:title"/>
+                <Cell col="1" text="bind:sub"/>
+                <Cell col="2" text="bind:snippet" expandshow="show" expandimage="url('theme://images/btn_WF_Stepitem_S.png')"/>
+                <Cell col="3" text="bind:description" wordWrap="char"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="Button00" taborder="2" text="Button00" left="9" top="515" width="120" height="50" onclick="Button00_onclick"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsSnippet">
+        <ColumnInfo>
+          <Column id="title" type="STRING" size="256"/>
+          <Column id="sub" type="STRING" size="256"/>
+          <Column id="snippet" type="STRING" size="256"/>
+          <Column id="expect" type="STRING" size="256"/>
+          <Column id="description" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="title">destructuring</Col>
+            <Col id="description">Destructuring assignment allows extracting data from arrays or objects using a syntax that mirrors array and object literals.</Col>
+            <Col id="sub">extract from array</Col>
+            <Col id="snippet">var cats = ['😹', '🙀', '😻'];
+
+// Access the first three items of an array in ES5
+var one = cats[0];
+var two = cats[1];
+var three = cats[2];
+trace(one, two, three);
+
+// Destructure the array in ES2015
+var [a, b, c] = cats;
+trace(a, b, c);
+
+// Destructure an array omitting certain values
+var [x, , y] = cats;
+trace(x, y);
+
+// Destructure an array using the ES2015 rest operator
+var [kitty, ...otherKitties] = cats;
+trace(kitty, otherKitties);</Col>
+          </Row>
+          <Row>
+            <Col id="title">destructuring</Col>
+            <Col id="sub">extract from object literals</Col>
+            <Col id="description">Destructuring assignment allows extracting data from arrays or objects using a syntax that mirrors array and object literals.</Col>
+            <Col id="snippet">var catAges = {sam: 12, passy: 14, surma: 16};
+
+// Destructure an object
+var {passy, surma} = catAges;
+trace(passy, surma);
+
+// Destructure an object, binding variables to different properties
+var {sam: cat1, passy: cat2, surma: cat3} = catAges;
+trace(cat1, cat2, cat3);</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.Grid00_onexpanddown = function(obj:nexacro.Grid,e:nexacro.GridMouseEventInfo)
+{
+	var code_snippet = obj.getCellValue(e.row, e.cell);
+	if (code_snippet)
+	{
+		eval(code_snippet);
+	}
+};
+
+this.Grid00_onexpandup = function(obj:nexacro.Grid,e:nexacro.GridMouseEventInfo)
+{
+	
+};
+
+if (typeof setTimeout === 'undefined')
+{
+	//////////////////////////////////////////////////////////////////////////////////////////////
+	// timer utils
+	var Timer = function (cbFunc, cbArgs)
+	{
+		this.id = undefined;
+		this.cbFunc = cbFunc;
+		this.cbArgs = cbArgs;
+	};	
+	
+	var onTimeoutCallback = function (timerObj)
+	{
+		return function ()
+		{
+			if (!timerObj || timerObj.id == undefined) 
+				return;
+			
+			nexacro._clearSystemTimer(null, timerObj.id);
+			if (timerObj.cbFunc)
+			{
+				timerObj.cbFunc.apply(null, timerObj.cbArgs);
+			}
+		};
+	};
+	
+	setTimeout = function(callbackFunc, milliseconds)
+	{
+		if (typeof callbackFunc != "function") 
+			return;
+		
+		milliseconds |= 0;
+		var callbackArgs = Array.prototype.slice.call(arguments, 2);
+		
+		var timerObj = new Timer(callbackFunc, callbackArgs);
+		var sysCallbackFunc = onTimeoutCallback(timerObj);
+		
+		var timerId = nexacro._setSystemTimer(null, sysCallbackFunc, milliseconds);
+		timerObj.id = timerId;
+		
+		return timerId;
+	};
+
+	clearTimeout = function(timerid)
+	{
+		nexacro._clearSystemTimer(null, timerid);
+	};
+	
+	var onIntervalCallback = function (timerObj)
+	{
+		return function ()
+		{
+			if (!timerObj || timerObj.id == undefined) 
+				return;
+			
+			if (timerObj.cbFunc)
+			{
+				timerObj.cbFunc.apply(null, timerObj.cbArgs);
+			}
+		};
+	};
+	setInterval = function(callbackFunc, milliseconds)
+	{
+		if (typeof callbackFunc != "function") 
+			return;
+		
+		milliseconds |= 0;
+		var callbackArgs = Array.prototype.slice.call(arguments, 2);
+		
+		var timerObj = new Timer(callbackFunc, callbackArgs);
+		var sysCallbackFunc = onIntervalCallback(timerObj);
+		
+		var timerId = nexacro._setSystemTimer(null, sysCallbackFunc, milliseconds);
+		timerObj.id = timerId;
+		
+		return timerId;
+	};
+
+	clearInterval = function(timerid)
+	{
+		nexacro._clearSystemTimer(null, timerid);
+	};
+}
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	let myFirstPromise = new Promise((resolve, reject) => {
+	  // We call resolve(...) when what we were doing asynchronously was successful, and reject(...) when it failed.
+	  // In this example, we use setTimeout(...) to simulate async code.
+	  // In reality, you will probably be using something like XHR or an HTML5 API.
+	  setTimeout(function(){
+		resolve("Success!"); // Yay! Everything went well!
+	  }, 250);
+	});
+	
+	myFirstPromise.then((successMessage) => {
+	  // successMessage is whatever we passed in the resolve(...) function above.
+	  // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+	  trace("Yay! " + successMessage);
+	});
+	
+	/*
+	async function fn() {
+		  let result = await myFirstPromise;
+		  trace('r:' + result);
+		  return 1;
+	}
+
+	fn().then(trace); // 1
+	*/
+};
+]]></Script>
+  </Form>
+</FDL>
