@@ -27,7 +27,7 @@ module.exports = {
             { 
                 oneOf: [
                     {
-                        test: /\.(png|gif|jpg|ttf|eot|svg|woff(2)?)$/i,
+                        /*test: /\.(png|gif|jpg|ttf|eot|svg|woff(2)?)$/i,*/
                         type: 'asset/resource',
                         resourceQuery: /raw/,
                         use: [

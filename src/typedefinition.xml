@@ -41,10 +41,10 @@
     <Service prefixid="Base" type="form" cachelevel="session" url="./Base/" version="0" communicationversion="0" include_subdir="false"/>
     <Service prefixid="frame" type="form" cachelevel="session" url="./frame/" version="0" communicationversion="0" include_subdir="false"/>
     <Service prefixid="Test" type="form" url="./Test/" version="0" cachelevel="session" include_subdir="true" communicationversion="0"/>
-    <!--Service prefixid="Resources" type="file" url="./Resources/" version="0" cachelevel="none" include_subdir="true" communicationversion="0"/-->
-    <!--Service prefixid="svc92291" type="JSP" version="0" cachelevel="none" include_subdir="false" communicationversion="0" url="http://172.10.12.19:8080/RP_92291_kopec-ui-poc/"/>
-    <Service prefixid="JSP" type="file" version="0" cachelevel="none" include_subdir="true" communicationversion="0" url="./JSP/"/-->
-    <!--Service prefixid="libs" type="js" url="./libs/" version="0" cachelevel="session" include_subdir="true" communicationversion="0"/-->
+    <Service prefixid="Resources" type="file" url="./Resources/" version="0" cachelevel="none" include_subdir="true" communicationversion="0"/>
+    <Service prefixid="svc92291" type="JSP" version="0" cachelevel="none" include_subdir="false" communicationversion="0" url="http://172.10.12.19:8080/RP_92291_kopec-ui-poc/"/>
+    <Service prefixid="JSP" type="file" version="0" cachelevel="none" include_subdir="true" communicationversion="0" url="./JSP/"/>
+    <Service prefixid="libs" type="js" url="./libs/" version="0" cachelevel="session" include_subdir="true" communicationversion="0"/>
   </Services>
   <Protocols/>
   <Update/>
