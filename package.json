@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "nexacro-loader": "file:../nexacro-loader",
     "webpack": "^5.65.0",
