@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="test01" classname="test01" left="0" top="0" width="1280" height="800" titletext="New Form" onerror="test01_onerror" onload="test01_onload" ontimer="test01_ontimer">
+    <Layouts>
+      <Layout height="800" width="1280">
+        <Grid id="GridLeft" taborder="0" useinputpanel="false" left="5" top="90" binddataset="ds_inData" bottom="5" width="48.98%" autofittype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="RowCnt"/>
+                <Cell col="1" text="Column0"/>
+                <Cell col="2" text="Column1"/>
+                <Cell col="3" text="Column2"/>
+                <Cell col="4" text="Column3"/>
+                <Cell col="5" text="Column4"/>
+                <Cell col="6" text="Column5"/>
+                <Cell col="7" text="Column6"/>
+                <Cell col="8" text="Column7"/>
+                <Cell col="9" text="Column8"/>
+                <Cell col="10" text="Column9"/>
+                <Cell col="11" text="Column10"/>
+                <Cell col="12" text="Column11"/>
+                <Cell col="13" text="Column12"/>
+                <Cell col="14" text="Column13"/>
+                <Cell col="15" text="Column14"/>
+                <Cell col="16" text="Column15"/>
+                <Cell col="17" text="Column16"/>
+                <Cell col="18" text="Column17"/>
+                <Cell col="19" text="Column18"/>
+                <Cell col="20" text="Column19"/>
+                <Cell col="21" text="Column20"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:RowCnt" background="transparent"/>
+                <Cell col="1" text="bind:Column0" background="transparent"/>
+                <Cell col="2" text="bind:Column1" background="transparent"/>
+                <Cell col="3" text="bind:Column2" background="transparent"/>
+                <Cell col="4" text="bind:Column3" background="transparent"/>
+                <Cell col="5" text="bind:Column4" background="transparent"/>
+                <Cell col="6" text="bind:Column5" background="transparent"/>
+                <Cell col="7" text="bind:Column6" background="transparent"/>
+                <Cell col="8" text="bind:Column7" background="transparent"/>
+                <Cell col="9" text="bind:Column8" background="transparent"/>
+                <Cell col="10" text="bind:Column9" background="transparent"/>
+                <Cell col="11" text="bind:Column10" background="transparent"/>
+                <Cell col="12" text="bind:Column11" background="transparent"/>
+                <Cell col="13" text="bind:Column12" background="transparent"/>
+                <Cell col="14" text="bind:Column13" background="transparent"/>
+                <Cell col="15" text="bind:Column14" background="transparent"/>
+                <Cell col="16" text="bind:Column15" background="transparent"/>
+                <Cell col="17" text="bind:Column16" background="transparent"/>
+                <Cell col="18" text="bind:Column17" background="transparent"/>
+                <Cell col="19" text="bind:Column18" background="transparent"/>
+                <Cell col="20" text="bind:Column19" background="transparent"/>
+                <Cell col="21" text="bind:Column20" background="transparent"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Edit id="edt_url" taborder="1" left="1284" top="0" width="332" height="23" value="JSP::RP_93302_transaction_test.jsp" text="JSP::RP_93302_transaction_test.jsp" visible="false"/>
+        <Button id="Button00" taborder="2" text="RUN" left="1283" top="27" width="74" height="23" onclick="Button00_onclick" visible="false"/>
+        <Grid id="GridRight" taborder="3" useinputpanel="false" top="90" binddataset="ds_inData" bottom="5" width="48.98%" autofittype="col" right="5" scrolldisplaymode="line">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="RowCnt"/>
+                <Cell col="1" text="Column0"/>
+                <Cell col="2" text="Column1"/>
+                <Cell col="3" text="Column2"/>
+                <Cell col="4" text="Column3"/>
+                <Cell col="5" text="Column4"/>
+                <Cell col="6" text="Column5"/>
+                <Cell col="7" text="Column6"/>
+                <Cell col="8" text="Column7"/>
+                <Cell col="9" text="Column8"/>
+                <Cell col="10" text="Column9"/>
+                <Cell col="11" text="Column10"/>
+                <Cell col="12" text="Column11"/>
+                <Cell col="13" text="Column12"/>
+                <Cell col="14" text="Column13"/>
+                <Cell col="15" text="Column14"/>
+                <Cell col="16" text="Column15"/>
+                <Cell col="17" text="Column16"/>
+                <Cell col="18" text="Column17"/>
+                <Cell col="19" text="Column18"/>
+                <Cell col="20" text="Column19"/>
+                <Cell col="21" text="Column20"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:RowCnt" background="transparent"/>
+                <Cell col="1" text="bind:Column0" background="transparent"/>
+                <Cell col="2" text="bind:Column1" background="transparent"/>
+                <Cell col="3" text="bind:Column2" background="transparent"/>
+                <Cell col="4" text="bind:Column3" background="transparent"/>
+                <Cell col="5" text="bind:Column4" background="transparent"/>
+                <Cell col="6" text="bind:Column5" background="transparent"/>
+                <Cell col="7" text="bind:Column6" background="transparent"/>
+                <Cell col="8" text="bind:Column7" background="transparent"/>
+                <Cell col="9" text="bind:Column8" background="transparent"/>
+                <Cell col="10" text="bind:Column9" background="transparent"/>
+                <Cell col="11" text="bind:Column10" background="transparent"/>
+                <Cell col="12" text="bind:Column11" background="transparent"/>
+                <Cell col="13" text="bind:Column12" background="transparent"/>
+                <Cell col="14" text="bind:Column13" background="transparent"/>
+                <Cell col="15" text="bind:Column14" background="transparent"/>
+                <Cell col="16" text="bind:Column15" background="transparent"/>
+                <Cell col="17" text="bind:Column16" background="transparent"/>
+                <Cell col="18" text="bind:Column17" background="transparent"/>
+                <Cell col="19" text="bind:Column18" background="transparent"/>
+                <Cell col="20" text="bind:Column19" background="transparent"/>
+                <Cell col="21" text="bind:Column20" background="transparent"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static00" taborder="4" text="&lt;b v='true'&gt;현재 스크롤&lt;/b&gt; : scrollTop 방식으로 view 영역의 모든 Row를 표시할 때 까지 block 되어 노드 개수가 많아지면 반응성이 좋지 않음" left="5" top="5" width="49%" height="47" verticalAlign="top" wordWrap="char" usedecorate="true"/>
+        <Static id="Static00_00" taborder="5" text="&lt;b v='true'&gt;개선 스크롤&lt;/b&gt; : Animation Frame 기능을 사용한 방식으로 view 영역에 최소 1 row ~ 10ms 내에 표시할 수 있는 row 만큼 렌더링하여, 빠른 스크롤 시 일부 row가 표시되지 않을 수 있음&#13;&#10;&lt;u v='true'&gt;'normal' scroll은 현재와 동일하고, 'line' 스크롤 지정 시 개선된 스크롤로 동작을 제안.&lt;/u&gt;&#13;&#10;" top="5" height="47" verticalAlign="top" wordWrap="char" usedecorate="true" right="5" width="49%"/>
+        <CheckBox id="ckbLineScrollMode" taborder="6" text="scrolldisplaymode=line" left="5" top="55" width="155" height="35" onchanged="ckbLineScrollMode_onchanged"/>
+        <Static id="Static00_01" taborder="7" text="💬 line scrollmode는 현재 IE와 fling만 지원, 개선과 비교를 WRE 허용" left="ckbLineScrollMode:10" top="55" height="35" right="Static00:-100.00%" wordWrap="char"/>
+        <Static id="Static00_01_00" taborder="8" text="💬 scrolldisplaymode=line 설정 시 동작임" top="55" width="48.98%" height="35" usedecorate="true" right="5"/>
+        <Div id="DivCover" taborder="9" left="1283" top="60" width="200" height="150" visible="false" background="black" opacity="0.3"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Dataset00" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false" onload="Dataset00_onload" progressload="false" onrowposchanged="Dataset00_onrowposchanged" preload="true"/>
+      <Dataset id="ds_inData" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="RowCnt" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column12" type="STRING" size="256"/>
+          <Column id="Column13" type="STRING" size="256"/>
+          <Column id="Column14" type="STRING" size="256"/>
+          <Column id="Column15" type="STRING" size="256"/>
+          <Column id="Column16" type="STRING" size="256"/>
+          <Column id="Column17" type="STRING" size="256"/>
+          <Column id="Column18" type="STRING" size="256"/>
+          <Column id="Column19" type="STRING" size="256"/>
+          <Column id="Column20" type="STRING" size="256"/>
+          <Column id="Column21" type="STRING" size="256"/>
+          <Column id="Column22" type="STRING" size="256"/>
+          <Column id="Column23" type="STRING" size="256"/>
+          <Column id="Column24" type="STRING" size="256"/>
+          <Column id="Column25" type="STRING" size="256"/>
+          <Column id="Column26" type="STRING" size="256"/>
+          <Column id="Column27" type="STRING" size="256"/>
+          <Column id="Column28" type="STRING" size="256"/>
+          <Column id="Column29" type="STRING" size="256"/>
+          <Column id="Column30" type="STRING" size="256"/>
+          <Column id="Column31" type="STRING" size="256"/>
+          <Column id="Column32" type="STRING" size="256"/>
+          <Column id="Column33" type="STRING" size="256"/>
+          <Column id="Column34" type="STRING" size="256"/>
+          <Column id="Column35" type="STRING" size="256"/>
+          <Column id="Column36" type="STRING" size="256"/>
+          <Column id="Column37" type="STRING" size="256"/>
+          <Column id="Column38" type="STRING" size="256"/>
+          <Column id="Column39" type="STRING" size="256"/>
+          <Column id="Column40" type="STRING" size="256"/>
+          <Column id="Column41" type="STRING" size="256"/>
+          <Column id="Column42" type="STRING" size="256"/>
+          <Column id="Column43" type="STRING" size="256"/>
+          <Column id="Column44" type="STRING" size="256"/>
+          <Column id="Column45" type="STRING" size="256"/>
+          <Column id="Column46" type="STRING" size="256"/>
+          <Column id="Column47" type="STRING" size="256"/>
+          <Column id="Column48" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="RowCnt">1</Col>
+            <Col id="Column0">あいカナぁ愛</Col>
+            <Col id="Column1">あいカナぁ愛</Col>
+            <Col id="Column2">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column3">あいカナぁ愛</Col>
+            <Col id="Column4">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column5">あいカナぁ愛</Col>
+            <Col id="Column6">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column7">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column8">あいカナぁ愛</Col>
+            <Col id="Column9">あいカナぁ愛</Col>
+            <Col id="Column10">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column11">あいカナぁ愛</Col>
+            <Col id="Column12">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column13">あいカナぁ愛</Col>
+            <Col id="Column14">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column15">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column16">あいカナぁ愛</Col>
+            <Col id="Column17">あいカナぁ愛</Col>
+            <Col id="Column18">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column19">あいカナぁ愛</Col>
+            <Col id="Column20">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column21">あいカナぁ愛</Col>
+            <Col id="Column22">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column23">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column24">あいカナぁ愛</Col>
+            <Col id="Column25">あいカナぁ愛</Col>
+            <Col id="Column26">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column27">あいカナぁ愛</Col>
+            <Col id="Column28">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column29">あいカナぁ愛</Col>
+            <Col id="Column30">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column31">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column32">あいカナぁ愛</Col>
+            <Col id="Column33">あいカナぁ愛</Col>
+            <Col id="Column34">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column35">あいカナぁ愛</Col>
+            <Col id="Column36">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column37">あいカナぁ愛</Col>
+            <Col id="Column38">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column39">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column40">あいカナぁ愛</Col>
+            <Col id="Column41">あいカナぁ愛</Col>
+            <Col id="Column42">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column43">あいカナぁ愛</Col>
+            <Col id="Column44">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column45">あいカナぁ愛</Col>
+            <Col id="Column46">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column47">가나뷀뷀붸루베루벱뷃</Col>
+            <Col id="Column48">あいカナぁ愛</Col>
+          </Row>
+          <Row>
+            <Col id="RowCnt">2</Col>
+            <Col id="Column0">aaa1</Col>
+            <Col id="Column1">aaa2</Col>
+            <Col id="Column2">한글1</Col>
+            <Col id="Column3">bbb1</Col>
+            <Col id="Column4">bbb2</Col>
+            <Col id="Column5">나라2</Col>
+            <Col id="Column6">특수~#</Col>
+            <Col id="Column7">문자&amp;*</Col>
+            <Col id="Column8">aaa1</Col>
+            <Col id="Column9">aaa2</Col>
+            <Col id="Column10">한글1</Col>
+            <Col id="Column11">bbb1</Col>
+            <Col id="Column12">bbb2</Col>
+            <Col id="Column13">나라2</Col>
+            <Col id="Column14">특수~#</Col>
+            <Col id="Column15">문자&amp;*</Col>
+            <Col id="Column16">aaa1</Col>
+            <Col id="Column17">aaa2</Col>
+            <Col id="Column18">한글1</Col>
+            <Col id="Column19">bbb1</Col>
+            <Col id="Column20">bbb2</Col>
+            <Col id="Column21">나라2</Col>
+            <Col id="Column22">특수~#</Col>
+            <Col id="Column23">문자&amp;*</Col>
+            <Col id="Column24">aaa1</Col>
+            <Col id="Column25">aaa2</Col>
+            <Col id="Column26">한글1</Col>
+            <Col id="Column27">bbb1</Col>
+            <Col id="Column28">bbb2</Col>
+            <Col id="Column29">나라2</Col>
+            <Col id="Column30">특수~#</Col>
+            <Col id="Column31">문자&amp;*</Col>
+            <Col id="Column32">aaa1</Col>
+            <Col id="Column33">aaa2</Col>
+            <Col id="Column34">한글1</Col>
+            <Col id="Column35">bbb1</Col>
+            <Col id="Column36">bbb2</Col>
+            <Col id="Column37">나라2</Col>
+            <Col id="Column38">특수~#</Col>
+            <Col id="Column39">문자&amp;*</Col>
+            <Col id="Column40">aaa1</Col>
+            <Col id="Column41">aaa2</Col>
+            <Col id="Column42">한글1</Col>
+            <Col id="Column43">bbb1</Col>
+            <Col id="Column44">bbb2</Col>
+            <Col id="Column45">나라2</Col>
+            <Col id="Column46">특수~#</Col>
+            <Col id="Column47">문자&amp;*</Col>
+            <Col id="Column48">aaa1</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_in" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="RowCnt" type="STRING" size="256"/>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+          <Column id="Column7" type="STRING" size="256"/>
+          <Column id="Column8" type="STRING" size="256"/>
+          <Column id="Column9" type="STRING" size="256"/>
+          <Column id="Column10" type="STRING" size="256"/>
+          <Column id="Column11" type="STRING" size="256"/>
+          <Column id="Column12" type="STRING" size="256"/>
+          <Column id="Column13" type="STRING" size="256"/>
+          <Column id="Column14" type="STRING" size="256"/>
+          <Column id="Column15" type="STRING" size="256"/>
+          <Column id="Column16" type="STRING" size="256"/>
+          <Column id="Column17" type="STRING" size="256"/>
+          <Column id="Column18" type="STRING" size="256"/>
+          <Column id="Column19" type="STRING" size="256"/>
+          <Column id="Column20" type="STRING" size="256"/>
+          <Column id="Column21" type="STRING" size="256"/>
+          <Column id="Column22" type="STRING" size="256"/>
+          <Column id="Column23" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+this.svr_param1 = "";
+this.startTime = null;
+this.endTime = null;
+this.Button00_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.GridLeft.set_binddataset("Dataset00");
+	this.GridRight.set_binddataset("Dataset00");
+	this.Dataset00.clear();
+		
+	var svc_url = this.edt_url.value;
+    var date = new Date();
+    this.startTime = date.getTime();    
+    this.ds_in.clearData();
+    this.ds_in.copyRow(this.ds_in.addRow(),this.ds_inData,this.ds_inData.rowposition);
+
+	var params = [];
+	params.push("type=XML");
+	params.push("rowcount=10000");
+	params.push("firstrowcount1=0");
+	params.push("firstrowcount2=0");
+	params.push("compress=false");
+	params.push("parameters=true");
+	params.push("receiveDsCount=1");
+	params.push("errorcode=0");
+	this.transaction("test",svc_url, "ds_in=ds_in","Dataset00=outds00",params.join(' '),"fncallback", true);
+}
+
+this.loadTestData = function ()
+{
+	this.GridLeft.set_binddataset("Dataset00");
+	this.GridRight.set_binddataset("Dataset00");
+	this.Dataset00.clear();
+		
+	var svc_url = this.edt_url.value;
+	
+    var date = new Date();
+    this.startTime = date.getTime();    
+    this.ds_in.clearData();
+    this.ds_in.copyRow(this.ds_in.addRow(),this.ds_inData,this.ds_inData.rowposition);
+
+	var params = [];
+	params.push("type=XML");
+	params.push("rowcount=3000");
+	params.push("firstrowcount1=0");
+	params.push("firstrowcount2=0");
+	params.push("compress=false");
+	params.push("parameters=true");
+	params.push("receiveDsCount=1");
+	params.push("errorcode=0");
+	this.transaction("test",svc_url, "ds_in=ds_in","Dataset00=outds00",params.join(' '),"fncallback", true);
+}
+
+this.fncallback = function(sid,errcd,errmsg)
+{
+	this.DivCover.set_visible(false);
+	trace("fncallback", sid , this.Dataset00.rowcount);
+}
+
+this.Dataset00_onload = function(obj:Dataset, e:nexacro.DSLoadEventInfo)
+{
+	trace("Dataset00 onload : rowcount [" + obj.rowcount + "] reason [" + e.reason + "]" + "progressload [" + e.progressload +"]");		
+}
+
+this.test01_onerror = function(obj:nexacro.Form,e:nexacro.ErrorEventInfo)
+{
+	trace("test01_onerror", e.errortype, e.errormsg, e.statuscode, e.requesturi, e.locationuri );
+};
+
+this.Dataset00_onrowposchanged = function(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo)
+{
+	trace("Dataset00_onrowposchanged", obj.rowposition);
+};
+
+
+this.ckbLineScrollMode_onchanged = function(obj:nexacro.CheckBox,e:nexacro.CheckBoxChangedEventInfo)
+{
+	this.GridLeft.set_scrolldisplaymode((!!obj.value) ? 'normal' : 'line');
+};
+
+this.test01_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.ckbLineScrollMode.set_value(this.GridLeft.scrolldisplaymode == "line");
+	this.GridRight._use_enhance_performance_scrolling = true;
+	
+	this.setTimer(100, 100);
+	
+	this.DivCover.move(0, 0, this.getOffsetWidth(), this.getOffsetHeight());
+	this.DivCover.set_visible(true);
+};
+
+this.test01_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo)
+{
+	this.killTimer(e.timerid);
+	
+	if (e.timerid == 100)
+	{
+		this.loadTestData();
+	}
+};
+]]></Script>
+  </Form>
+</FDL>

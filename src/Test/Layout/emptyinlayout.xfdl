@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="emptyinlayout" width="1280" height="720" titletext="New Form" tooltiptype="hover" userprop="default">
+    <Layouts>
+      <Layout height="720" width="1280" description="default"/>
+      <Layout name="Layout0" width="1024" height="768" mobileorientation="landscape" titletext="New Form-l2" scrollbartype="none autoindicator" scrolltype="vertical" stepcount="3" description="additional layout" userprop="layout"/>
+    </Layouts>
+    <InitValue statustext="test"/>
+  </Form>
+</FDL>

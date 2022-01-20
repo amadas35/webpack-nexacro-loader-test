@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="AppCss" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Static id="Static00" taborder="0" text="More" left="18" top="15" width="122" height="35" cssclass="sta_main_more"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

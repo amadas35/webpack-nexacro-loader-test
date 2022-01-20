@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="IWebView2" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Plugin id="Plugin00" taborder="0" left="5" top="5" right="5" bottom="5"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

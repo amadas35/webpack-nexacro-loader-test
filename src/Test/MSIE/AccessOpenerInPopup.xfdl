@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="AccessOpenerInPopup" width="1280" height="720" titletext="New Form" onload="AccessOpenerInPopup_onload">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <WebBrowser id="WebBrowser00" taborder="0" left="5" top="5" right="5" bottom="5" url="http://172.10.12.19:8080/nexacroN/examples/Resources/html-files/open.html"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.AccessOpenerInPopup_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

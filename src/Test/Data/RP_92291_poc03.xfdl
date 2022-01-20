@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="form" width="1070" height="560" titletext="대용량 데이터 조회" onload="form_onload" ontimer="form_ontimer">
+    <Layouts>
+      <Layout height="560" width="1070">
+        <Button id="Button00" taborder="0" text="조회" left="236" top="8" width="120" height="30" onclick="Button00_onclick"/>
+        <Grid id="Grid00" taborder="1" left="10" top="48" height="520" binddataset="dsList" right="10">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="48" band="left"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="100"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="No."/>
+                <Cell col="1" text="DOWN_FILE_NAME6"/>
+                <Cell col="2" text="PC_FILE_NAME6"/>
+                <Cell col="3" text="DOWN_FILE_NAME5"/>
+                <Cell col="4" text="PC_FILE_NAME7"/>
+                <Cell col="5" text="DOWN_FILE_NAME7"/>
+                <Cell col="6" text="DOWN_FILE_NAME2"/>
+                <Cell col="7" text="PC_FILE_NAME2"/>
+                <Cell col="8" text="DOWN_FILE_NAME1"/>
+                <Cell col="9" text="PC_FILE_NAME3"/>
+                <Cell col="10" text="DOWN_FILE_NAME4"/>
+                <Cell col="11" text="PC_FILE_NAME4"/>
+                <Cell col="12" text="DOWN_FILE_NAME3"/>
+                <Cell col="13" text="PC_FILE_NAME5"/>
+                <Cell col="14" text="ISSUE_SEQ_NO"/>
+                <Cell col="15" text="DOWN_LOAD_DATE2"/>
+                <Cell col="16" text="DOWN_LOAD_DATE3"/>
+                <Cell col="17" text="DOWN_LOAD_DATE4"/>
+                <Cell col="18" text="DOWN_LOAD_DATE5"/>
+                <Cell col="19" text="SYSTEM_CD"/>
+                <Cell col="20" text="DOWN_LOAD_DATE6"/>
+                <Cell col="21" text="DOWN_LOAD_DATE7"/>
+                <Cell col="22" text="DOWN_LOADER6"/>
+                <Cell col="23" text="DOWN_LOADER7"/>
+                <Cell col="24" text="DOWN_LOADER4"/>
+                <Cell col="25" text="DOWN_FILE_NAME"/>
+                <Cell col="26" text="PC_FILE_NAME1"/>
+                <Cell col="27" text="DOWN_LOADER5"/>
+                <Cell col="28" text="DOWN_LOADER2"/>
+                <Cell col="29" text="SECURITY_YN7"/>
+                <Cell col="30" text="DOWN_LOADER3"/>
+                <Cell col="31" text="SECURITY_YN6"/>
+                <Cell col="32" text="FILE_SEQ"/>
+                <Cell col="33" text="SECURITY_YN5"/>
+                <Cell col="34" text="REV_NO"/>
+                <Cell col="35" text="DOWN_LOADER1"/>
+                <Cell col="36" text="DOWN_LOAD_DATE1"/>
+                <Cell col="37" text="SECURITY_YN4"/>
+                <Cell col="38" text="PC_FILE_NAME"/>
+                <Cell col="39" text="DOC_NO8"/>
+                <Cell col="40" text="PROJ_CD1"/>
+                <Cell col="41" text="PROJ_CD2"/>
+                <Cell col="42" text="RESP_GROUP"/>
+                <Cell col="43" text="DOWN_PC_MAC"/>
+                <Cell col="44" text="DOC_NO3"/>
+                <Cell col="45" text="PROJ_CD5"/>
+                <Cell col="46" text="DOC_NO2"/>
+                <Cell col="47" text="PROJ_CD6"/>
+                <Cell col="48" text="DOC_NO1"/>
+                <Cell col="49" text="PROJ_CD3"/>
+                <Cell col="50" text="PROJ_CD4"/>
+                <Cell col="51" text="DOC_NO7"/>
+                <Cell col="52" text="DOC_NO6"/>
+                <Cell col="53" text="DOC_NO5"/>
+                <Cell col="54" text="PROJ_CD7"/>
+                <Cell col="55" text="DOC_NO4"/>
+                <Cell col="56" text="PROJ_CD8"/>
+                <Cell col="57" text="DOWN_PC_FILE_NAME7"/>
+                <Cell col="58" text="DOWN_LOAD_DATE"/>
+                <Cell col="59" text="DOWN_PC_FILE_NAME1"/>
+                <Cell col="60" text="DOWN_PC_FILE_NAME2"/>
+                <Cell col="61" text="DOC_CATEGORY"/>
+                <Cell col="62" text="DOWN_PC_FILE_NAME5"/>
+                <Cell col="63" text="DOWN_PC_FILE_NAME6"/>
+                <Cell col="64" text="DOWN_PC_FILE_NAME3"/>
+                <Cell col="65" text="DOWN_PC_FILE_NAME4"/>
+                <Cell col="66" text="DOWN_LOADER_NAME1"/>
+                <Cell col="67" text="DOWN_LOADER_NAME2"/>
+                <Cell col="68" text="DOWN_LOADER_NAME3"/>
+                <Cell col="69" text="DOWN_LOADER_NAME4"/>
+                <Cell col="70" text="DOWN_LOADER_NAME5"/>
+                <Cell col="71" text="DOWN_LOADER_NAME6"/>
+                <Cell col="72" text="DOWN_LOADER_NAME7"/>
+                <Cell col="73" text="SECURITY_YN3"/>
+                <Cell col="74" text="SECURITY_YN2"/>
+                <Cell col="75" text="SECURITY_YN1"/>
+                <Cell col="76" text="DOWN_PC_NAME"/>
+                <Cell col="77" text="DOWN_PC_FILE_NAME"/>
+                <Cell col="78" text="DOC_TYPE2"/>
+                <Cell col="79" text="FILE_SIZE4"/>
+                <Cell col="80" text="FILE_SIZE"/>
+                <Cell col="81" text="DOC_TYPE1"/>
+                <Cell col="82" text="FILE_SIZE5"/>
+                <Cell col="83" text="DOC_TYPE4"/>
+                <Cell col="84" text="FILE_SIZE6"/>
+                <Cell col="85" text="DOC_TYPE3"/>
+                <Cell col="86" text="FILE_SIZE7"/>
+                <Cell col="87" text="DOC_TYPE6"/>
+                <Cell col="88" text="DOC_TYPE5"/>
+                <Cell col="89" text="DOC_TYPE8"/>
+                <Cell col="90" text="DOC_TYPE7"/>
+                <Cell col="91" text="ISSUE_SEQ_NO3"/>
+                <Cell col="92" text="SHEET_NO6"/>
+                <Cell col="93" text="ISSUE_SEQ_NO4"/>
+                <Cell col="94" text="SHEET_NO5"/>
+                <Cell col="95" text="ISSUE_SEQ_NO5"/>
+                <Cell col="96" text="SHEET_NO8"/>
+                <Cell col="97" text="ISSUE_SEQ_NO6"/>
+                <Cell col="98" text="SHEET_NO7"/>
+                <Cell col="99" text="SHEET_NO2"/>
+                <Cell col="100" text="SHEET_NO1"/>
+                <Cell col="101" text="DOWN_LOADER"/>
+                <Cell col="102" text="ISSUE_SEQ_NO1"/>
+                <Cell col="103" text="SHEET_NO4"/>
+                <Cell col="104" text="ISSUE_SEQ_NO2"/>
+                <Cell col="105" text="SHEET_NO3"/>
+                <Cell col="106" text="DOC_TYPE"/>
+                <Cell col="107" text="ISSUE_SEQ_NO7"/>
+                <Cell col="108" text="ISSUE_SEQ_NO8"/>
+                <Cell col="109" text="FILE_SIZE1"/>
+                <Cell col="110" text="FILE_SIZE2"/>
+                <Cell col="111" text="FILE_SIZE3"/>
+                <Cell col="112" text="DOC_CATEGORY1"/>
+                <Cell col="113" text="DOC_CATEGORY2"/>
+                <Cell col="114" text="DOC_CATEGORY3"/>
+                <Cell col="115" text="DOC_CATEGORY4"/>
+                <Cell col="116" text="DOC_GRADE1"/>
+                <Cell col="117" text="SYSTEM_CD7"/>
+                <Cell col="118" text="SYSTEM_CD8"/>
+                <Cell col="119" text="DOC_GRADE3"/>
+                <Cell col="120" text="SYSTEM_CD5"/>
+                <Cell col="121" text="DOC_GRADE2"/>
+                <Cell col="122" text="SYSTEM_CD6"/>
+                <Cell col="123" text="SYSTEM_CD3"/>
+                <Cell col="124" text="DOC_GRADE5"/>
+                <Cell col="125" text="SYSTEM_CD4"/>
+                <Cell col="126" text="DOC_GRADE4"/>
+                <Cell col="127" text="SYSTEM_CD1"/>
+                <Cell col="128" text="DOC_GRADE7"/>
+                <Cell col="129" text="SYSTEM_CD2"/>
+                <Cell col="130" text="DOC_GRADE6"/>
+                <Cell col="131" text="REV_NO2"/>
+                <Cell col="132" text="REV_NO1"/>
+                <Cell col="133" text="REV_NO4"/>
+                <Cell col="134" text="REV_NO3"/>
+                <Cell col="135" text="SHEET_NO"/>
+                <Cell col="136" text="DOC_CATEGORY5"/>
+                <Cell col="137" text="DOC_CATEGORY6"/>
+                <Cell col="138" text="DOC_CATEGORY7"/>
+                <Cell col="139" text="DOC_CATEGORY8"/>
+                <Cell col="140" text="REV_NO6"/>
+                <Cell col="141" text="REV_NO5"/>
+                <Cell col="142" text="REV_NO8"/>
+                <Cell col="143" text="REV_NO7"/>
+                <Cell col="144" text="DOC_GRADE"/>
+                <Cell col="145" text="DOWN_PC_IP4"/>
+                <Cell col="146" text="DOWN_PC_IP5"/>
+                <Cell col="147" text="DOC_NO"/>
+                <Cell col="148" text="DOWN_PC_IP2"/>
+                <Cell col="149" text="DOWN_PC_IP3"/>
+                <Cell col="150" text="SECURITY_YN"/>
+                <Cell col="151" text="DOWN_PC_IP1"/>
+                <Cell col="152" text="RESP_DIV1"/>
+                <Cell col="153" text="FILE_SEQ1"/>
+                <Cell col="154" text="RESP_DIV2"/>
+                <Cell col="155" text="DOWN_PC_MAC7"/>
+                <Cell col="156" text="RESP_DIV3"/>
+                <Cell col="157" text="DOWN_PC_MAC6"/>
+                <Cell col="158" text="FILE_SEQ3"/>
+                <Cell col="159" text="RESP_DIV4"/>
+                <Cell col="160" text="DOWN_PC_MAC5"/>
+                <Cell col="161" text="FILE_SEQ2"/>
+                <Cell col="162" text="DOWN_PC_MAC4"/>
+                <Cell col="163" text="RESP_DIV5"/>
+                <Cell col="164" text="DOWN_PC_MAC3"/>
+                <Cell col="165" text="RESP_DIV6"/>
+                <Cell col="166" text="DOWN_PC_MAC2"/>
+                <Cell col="167" text="RESP_DIV7"/>
+                <Cell col="168" text="DOWN_PC_MAC1"/>
+                <Cell col="169" text="RESP_GROUP3"/>
+                <Cell col="170" text="RESP_GROUP2"/>
+                <Cell col="171" text="RESP_GROUP1"/>
+                <Cell col="172" text="DOWN_LOADER_NAME"/>
+                <Cell col="173" text="FILE_SEQ5"/>
+                <Cell col="174" text="RESP_GROUP7"/>
+                <Cell col="175" text="FILE_SEQ4"/>
+                <Cell col="176" text="RESP_GROUP6"/>
+                <Cell col="177" text="RESP_GROUP5"/>
+                <Cell col="178" text="FILE_SEQ7"/>
+                <Cell col="179" text="PROJ_CD"/>
+                <Cell col="180" text="RESP_GROUP4"/>
+                <Cell col="181" text="FILE_SEQ6"/>
+                <Cell col="182" text="RESP_DIV"/>
+                <Cell col="183" text="DOWN_PC_IP"/>
+                <Cell col="184" text="DOWN_PC_NAME1"/>
+                <Cell col="185" text="DOWN_PC_IP6"/>
+                <Cell col="186" text="DOWN_PC_IP7"/>
+                <Cell col="187" text="DOWN_PC_NAME5"/>
+                <Cell col="188" text="DOWN_PC_NAME4"/>
+                <Cell col="189" text="DOWN_PC_NAME3"/>
+                <Cell col="190" text="DOWN_PC_NAME2"/>
+                <Cell col="191" text="DOWN_PC_NAME7"/>
+                <Cell col="192" text="DOWN_PC_NAME6"/>
+              </Band>
+              <Band id="body">
+                <Cell text="expr:currow+1"/>
+                <Cell col="1" text="bind:DOWN_FILE_NAME6"/>
+                <Cell col="2" text="bind:PC_FILE_NAME6"/>
+                <Cell col="3" text="bind:DOWN_FILE_NAME5"/>
+                <Cell col="4" text="bind:PC_FILE_NAME7"/>
+                <Cell col="5" text="bind:DOWN_FILE_NAME7"/>
+                <Cell col="6" text="bind:DOWN_FILE_NAME2"/>
+                <Cell col="7" text="bind:PC_FILE_NAME2"/>
+                <Cell col="8" text="bind:DOWN_FILE_NAME1"/>
+                <Cell col="9" text="bind:PC_FILE_NAME3"/>
+                <Cell col="10" text="bind:DOWN_FILE_NAME4"/>
+                <Cell col="11" text="bind:PC_FILE_NAME4"/>
+                <Cell col="12" text="bind:DOWN_FILE_NAME3"/>
+                <Cell col="13" text="bind:PC_FILE_NAME5"/>
+                <Cell col="14" text="bind:ISSUE_SEQ_NO"/>
+                <Cell col="15" text="bind:DOWN_LOAD_DATE2"/>
+                <Cell col="16" text="bind:DOWN_LOAD_DATE3"/>
+                <Cell col="17" text="bind:DOWN_LOAD_DATE4"/>
+                <Cell col="18" text="bind:DOWN_LOAD_DATE5"/>
+                <Cell col="19" text="bind:SYSTEM_CD"/>
+                <Cell col="20" text="bind:DOWN_LOAD_DATE6"/>
+                <Cell col="21" text="bind:DOWN_LOAD_DATE7"/>
+                <Cell col="22" text="bind:DOWN_LOADER6"/>
+                <Cell col="23" text="bind:DOWN_LOADER7"/>
+                <Cell col="24" text="bind:DOWN_LOADER4"/>
+                <Cell col="25" text="bind:DOWN_FILE_NAME"/>
+                <Cell col="26" text="bind:PC_FILE_NAME1"/>
+                <Cell col="27" text="bind:DOWN_LOADER5"/>
+                <Cell col="28" text="bind:DOWN_LOADER2"/>
+                <Cell col="29" text="bind:SECURITY_YN7"/>
+                <Cell col="30" text="bind:DOWN_LOADER3"/>
+                <Cell col="31" text="bind:SECURITY_YN6"/>
+                <Cell col="32" text="bind:FILE_SEQ"/>
+                <Cell col="33" text="bind:SECURITY_YN5"/>
+                <Cell col="34" text="bind:REV_NO"/>
+                <Cell col="35" text="bind:DOWN_LOADER1"/>
+                <Cell col="36" text="bind:DOWN_LOAD_DATE1"/>
+                <Cell col="37" text="bind:SECURITY_YN4"/>
+                <Cell col="38" text="bind:PC_FILE_NAME"/>
+                <Cell col="39" text="bind:DOC_NO8"/>
+                <Cell col="40" text="bind:PROJ_CD1"/>
+                <Cell col="41" text="bind:PROJ_CD2"/>
+                <Cell col="42" text="bind:RESP_GROUP"/>
+                <Cell col="43" text="bind:DOWN_PC_MAC"/>
+                <Cell col="44" text="bind:DOC_NO3"/>
+                <Cell col="45" text="bind:PROJ_CD5"/>
+                <Cell col="46" text="bind:DOC_NO2"/>
+                <Cell col="47" text="bind:PROJ_CD6"/>
+                <Cell col="48" text="bind:DOC_NO1"/>
+                <Cell col="49" text="bind:PROJ_CD3"/>
+                <Cell col="50" text="bind:PROJ_CD4"/>
+                <Cell col="51" text="bind:DOC_NO7"/>
+                <Cell col="52" text="bind:DOC_NO6"/>
+                <Cell col="53" text="bind:DOC_NO5"/>
+                <Cell col="54" text="bind:PROJ_CD7"/>
+                <Cell col="55" text="bind:DOC_NO4"/>
+                <Cell col="56" text="bind:PROJ_CD8"/>
+                <Cell col="57" text="bind:DOWN_PC_FILE_NAME7"/>
+                <Cell col="58" text="bind:DOWN_LOAD_DATE"/>
+                <Cell col="59" text="bind:DOWN_PC_FILE_NAME1"/>
+                <Cell col="60" text="bind:DOWN_PC_FILE_NAME2"/>
+                <Cell col="61" text="bind:DOC_CATEGORY"/>
+                <Cell col="62" text="bind:DOWN_PC_FILE_NAME5"/>
+                <Cell col="63" text="bind:DOWN_PC_FILE_NAME6"/>
+                <Cell col="64" text="bind:DOWN_PC_FILE_NAME3"/>
+                <Cell col="65" text="bind:DOWN_PC_FILE_NAME4"/>
+                <Cell col="66" text="bind:DOWN_LOADER_NAME1"/>
+                <Cell col="67" text="bind:DOWN_LOADER_NAME2"/>
+                <Cell col="68" text="bind:DOWN_LOADER_NAME3"/>
+                <Cell col="69" text="bind:DOWN_LOADER_NAME4"/>
+                <Cell col="70" text="bind:DOWN_LOADER_NAME5"/>
+                <Cell col="71" text="bind:DOWN_LOADER_NAME6"/>
+                <Cell col="72" text="bind:DOWN_LOADER_NAME7"/>
+                <Cell col="73" text="bind:SECURITY_YN3"/>
+                <Cell col="74" text="bind:SECURITY_YN2"/>
+                <Cell col="75" text="bind:SECURITY_YN1"/>
+                <Cell col="76" text="bind:DOWN_PC_NAME"/>
+                <Cell col="77" text="bind:DOWN_PC_FILE_NAME"/>
+                <Cell col="78" text="bind:DOC_TYPE2"/>
+                <Cell col="79" text="bind:FILE_SIZE4"/>
+                <Cell col="80" text="bind:FILE_SIZE"/>
+                <Cell col="81" text="bind:DOC_TYPE1"/>
+                <Cell col="82" text="bind:FILE_SIZE5"/>
+                <Cell col="83" text="bind:DOC_TYPE4"/>
+                <Cell col="84" text="bind:FILE_SIZE6"/>
+                <Cell col="85" text="bind:DOC_TYPE3"/>
+                <Cell col="86" text="bind:FILE_SIZE7"/>
+                <Cell col="87" text="bind:DOC_TYPE6"/>
+                <Cell col="88" text="bind:DOC_TYPE5"/>
+                <Cell col="89" text="bind:DOC_TYPE8"/>
+                <Cell col="90" text="bind:DOC_TYPE7"/>
+                <Cell col="91" text="bind:ISSUE_SEQ_NO3"/>
+                <Cell col="92" text="bind:SHEET_NO6"/>
+                <Cell col="93" text="bind:ISSUE_SEQ_NO4"/>
+                <Cell col="94" text="bind:SHEET_NO5"/>
+                <Cell col="95" text="bind:ISSUE_SEQ_NO5"/>
+                <Cell col="96" text="bind:SHEET_NO8"/>
+                <Cell col="97" text="bind:ISSUE_SEQ_NO6"/>
+                <Cell col="98" text="bind:SHEET_NO7"/>
+                <Cell col="99" text="bind:SHEET_NO2"/>
+                <Cell col="100" text="bind:SHEET_NO1"/>
+                <Cell col="101" text="bind:DOWN_LOADER"/>
+                <Cell col="102" text="bind:ISSUE_SEQ_NO1"/>
+                <Cell col="103" text="bind:SHEET_NO4"/>
+                <Cell col="104" text="bind:ISSUE_SEQ_NO2"/>
+                <Cell col="105" text="bind:SHEET_NO3"/>
+                <Cell col="106" text="bind:DOC_TYPE"/>
+                <Cell col="107" text="bind:ISSUE_SEQ_NO7"/>
+                <Cell col="108" text="bind:ISSUE_SEQ_NO8"/>
+                <Cell col="109" text="bind:FILE_SIZE1"/>
+                <Cell col="110" text="bind:FILE_SIZE2"/>
+                <Cell col="111" text="bind:FILE_SIZE3"/>
+                <Cell col="112" text="bind:DOC_CATEGORY1"/>
+                <Cell col="113" text="bind:DOC_CATEGORY2"/>
+                <Cell col="114" text="bind:DOC_CATEGORY3"/>
+                <Cell col="115" text="bind:DOC_CATEGORY4"/>
+                <Cell col="116" text="bind:DOC_GRADE1"/>
+                <Cell col="117" text="bind:SYSTEM_CD7"/>
+                <Cell col="118" text="bind:SYSTEM_CD8"/>
+                <Cell col="119" text="bind:DOC_GRADE3"/>
+                <Cell col="120" text="bind:SYSTEM_CD5"/>
+                <Cell col="121" text="bind:DOC_GRADE2"/>
+                <Cell col="122" text="bind:SYSTEM_CD6"/>
+                <Cell col="123" text="bind:SYSTEM_CD3"/>
+                <Cell col="124" text="bind:DOC_GRADE5"/>
+                <Cell col="125" text="bind:SYSTEM_CD4"/>
+                <Cell col="126" text="bind:DOC_GRADE4"/>
+                <Cell col="127" text="bind:SYSTEM_CD1"/>
+                <Cell col="128" text="bind:DOC_GRADE7"/>
+                <Cell col="129" text="bind:SYSTEM_CD2"/>
+                <Cell col="130" text="bind:DOC_GRADE6"/>
+                <Cell col="131" text="bind:REV_NO2"/>
+                <Cell col="132" text="bind:REV_NO1"/>
+                <Cell col="133" text="bind:REV_NO4"/>
+                <Cell col="134" text="bind:REV_NO3"/>
+                <Cell col="135" text="bind:SHEET_NO"/>
+                <Cell col="136" text="bind:DOC_CATEGORY5"/>
+                <Cell col="137" text="bind:DOC_CATEGORY6"/>
+                <Cell col="138" text="bind:DOC_CATEGORY7"/>
+                <Cell col="139" text="bind:DOC_CATEGORY8"/>
+                <Cell col="140" text="bind:REV_NO6"/>
+                <Cell col="141" text="bind:REV_NO5"/>
+                <Cell col="142" text="bind:REV_NO8"/>
+                <Cell col="143" text="bind:REV_NO7"/>
+                <Cell col="144" text="bind:DOC_GRADE"/>
+                <Cell col="145" text="bind:DOWN_PC_IP4"/>
+                <Cell col="146" text="bind:DOWN_PC_IP5"/>
+                <Cell col="147" text="bind:DOC_NO"/>
+                <Cell col="148" text="bind:DOWN_PC_IP2"/>
+                <Cell col="149" text="bind:DOWN_PC_IP3"/>
+                <Cell col="150" text="bind:SECURITY_YN"/>
+                <Cell col="151" text="bind:DOWN_PC_IP1"/>
+                <Cell col="152" text="bind:RESP_DIV1"/>
+                <Cell col="153" text="bind:FILE_SEQ1"/>
+                <Cell col="154" text="bind:RESP_DIV2"/>
+                <Cell col="155" text="bind:DOWN_PC_MAC7"/>
+                <Cell col="156" text="bind:RESP_DIV3"/>
+                <Cell col="157" text="bind:DOWN_PC_MAC6"/>
+                <Cell col="158" text="bind:FILE_SEQ3"/>
+                <Cell col="159" text="bind:RESP_DIV4"/>
+                <Cell col="160" text="bind:DOWN_PC_MAC5"/>
+                <Cell col="161" text="bind:FILE_SEQ2"/>
+                <Cell col="162" text="bind:DOWN_PC_MAC4"/>
+                <Cell col="163" text="bind:RESP_DIV5"/>
+                <Cell col="164" text="bind:DOWN_PC_MAC3"/>
+                <Cell col="165" text="bind:RESP_DIV6"/>
+                <Cell col="166" text="bind:DOWN_PC_MAC2"/>
+                <Cell col="167" text="bind:RESP_DIV7"/>
+                <Cell col="168" text="bind:DOWN_PC_MAC1"/>
+                <Cell col="169" text="bind:RESP_GROUP3"/>
+                <Cell col="170" text="bind:RESP_GROUP2"/>
+                <Cell col="171" text="bind:RESP_GROUP1"/>
+                <Cell col="172" text="bind:DOWN_LOADER_NAME"/>
+                <Cell col="173" text="bind:FILE_SEQ5"/>
+                <Cell col="174" text="bind:RESP_GROUP7"/>
+                <Cell col="175" text="bind:FILE_SEQ4"/>
+                <Cell col="176" text="bind:RESP_GROUP6"/>
+                <Cell col="177" text="bind:RESP_GROUP5"/>
+                <Cell col="178" text="bind:FILE_SEQ7"/>
+                <Cell col="179" text="bind:PROJ_CD"/>
+                <Cell col="180" text="bind:RESP_GROUP4"/>
+                <Cell col="181" text="bind:FILE_SEQ6"/>
+                <Cell col="182" text="bind:RESP_DIV"/>
+                <Cell col="183" text="bind:DOWN_PC_IP"/>
+                <Cell col="184" text="bind:DOWN_PC_NAME1"/>
+                <Cell col="185" text="bind:DOWN_PC_IP6"/>
+                <Cell col="186" text="bind:DOWN_PC_IP7"/>
+                <Cell col="187" text="bind:DOWN_PC_NAME5"/>
+                <Cell col="188" text="bind:DOWN_PC_NAME4"/>
+                <Cell col="189" text="bind:DOWN_PC_NAME3"/>
+                <Cell col="190" text="bind:DOWN_PC_NAME2"/>
+                <Cell col="191" text="bind:DOWN_PC_NAME7"/>
+                <Cell col="192" text="bind:DOWN_PC_NAME6"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Combo id="Combo01" taborder="2" left="81" top="8" width="150" height="30" innerdataset="innerdataset" codecolumn="codecolumn" datacolumn="datacolumn" index="0" text="전체" value="">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="datacolumn">1,000</Col>
+                <Col id="codecolumn">1000</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">10,000</Col>
+                <Col id="codecolumn">10000</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">100,000</Col>
+                <Col id="codecolumn">100000</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">200,000</Col>
+                <Col id="codecolumn">200000</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">300000</Col>
+                <Col id="datacolumn">300,000</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">500,000</Col>
+                <Col id="codecolumn">500000</Col>
+              </Row>
+              <Row>
+                <Col id="datacolumn">1,000,000</Col>
+                <Col id="codecolumn">1000000</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Static id="Static00" taborder="3" left="378" top="8" width="190" height="30"/>
+        <Static id="Static01" taborder="4" left="576" top="8" width="190" height="30"/>
+        <Static id="Static02" taborder="5" text="조회건수" left="10" top="8" width="70" height="30"/>
+        <CheckBox id="ChkArrayBuffer" taborder="6" text="use arraybuffer" top="13" width="115" height="20" right="180"/>
+        <CheckBox id="ChkProgressLoad" taborder="7" text="use progressload" top="13" width="130" height="20" right="30"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsSearch" description="대용량 데이터통신 POC 샘플">
+        <ColumnInfo>
+          <Column id="searchDocType" type="STRING" size="256"/>
+          <Column id="searchDocNo" type="STRING" size="256"/>
+          <Column id="searchDownLoaderName" type="STRING" size="256"/>
+          <Column id="searchDownLoadDateFrom" type="STRING" size="256"/>
+          <Column id="searchDownLoadDateTo" type="STRING" size="256"/>
+          <Column id="searchRowCount" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="searchRowCount">1000</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsList" onload="dsList_onload" progressload="true"/>
+      <Dataset id="dsFirstRowStatus"/>
+    </Objects>
+    <Bind>
+      <BindItem id="item1" compid="Combo01" propid="value" datasetid="dsSearch" columnid="searchRowCount"/>
+    </Bind>
+    <Script type="xscript5.1"><![CDATA[this.renderFlag = false;
+this.startTime;
+
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var firstRowCount = 1000;
+	this.renderFlag = false;
+	this.Static00.set_text("");
+	this.Static01.set_text("");
+	
+	this.Grid00.vscrollbar.set_pos(0);
+	this.dsList.clearData();
+	//this.Grid00.set_binddataset('');
+	//this.Grid00.set_enableredraw(false);
+	
+	//this.setTimer(100, 500);
+		
+	this.startTime = new Date();
+	
+	this._requery = false;
+	nexacro._use_progress_data = this.ChkProgressLoad.isChecked();
+	nexacro._transfer_data_mode = (this.ChkArrayBuffer.isChecked() ? 1 : 0);
+	
+	var reqUrl, inParam = "", row_count = this.dsSearch.getColumn(0, "searchRowCount")|0;
+
+	switch (row_count)
+	{
+	  case 10000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-10K.ssv";
+		break;
+	  /*case 100000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-100K.ssv";
+		break;
+	  case 200000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-200K.ssv";
+		break;
+	  case 300000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-300K.ssv";
+		break;
+	  case 500000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-500K.ssv";
+		break;
+	  case 1000000:
+		reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-1M.ssv";
+		break;*/
+	  default:
+		reqUrl = "svc92291::coSysDownloadLogPoc/JdbcLargeDataList.do";
+		inParam = "input=dsSearch";
+		break;
+	}
+	
+	trace("[use_progress_data]:" + nexacro._use_progress_data);
+	trace("[transfer_data_mode]:" + nexacro._transfer_data_mode);
+	trace("Request URL:" + reqUrl + " ("+ inParam + ")");
+	this.transaction("search", reqUrl, inParam, "dsList=output dsFirstRowStatus=FirstRowStatus", "firstRowCount="+firstRowCount, "fnCallback", true, 2);
+	
+	//this.transaction("search", "svcPoc::coSysDownloadLogPoc/JdbcLargeDataList.do", "input=dsSearch", "dsList=output dsFirstRowStatus=FirstRowStatus", "firstRowCount="+firstRowCount, "fnCallback", true, 2);
+	//this.transaction("search", "svcPoc::coSysDownloadLogPoc/JdbcLargeDataList.do", "input=dsSearch", "dsList=output dsFirstRowStatus=FirstRowStatus", "firstRowCount="+firstRowCount, "fnCallback", true, 2);
+};
+
+this.fnCallback = function(svcID, errorCode, errorMsg) {
+	// 에러 시 화면 처리 내역
+	if (errorCode != 0) {
+		trace("[" + errorCode + "] " + errorMsg);
+		alert("[" + errorCode + "] " + errorMsg);
+		return;
+	}
+	
+	switch (svcID) {
+	case "search":
+		var endTime = new Date();
+		var elapsedTime = nexacro.round((endTime - this.startTime)/1000, 3);
+		this.Static01.set_text("Total Time: "+elapsedTime+" sec");
+		
+		var strErrorCode = this.dsFirstRowStatus.getColumn(0, "ErrorCode"),
+			strErrorMsg = this.dsFirstRowStatus.getColumn(0, "ErrorMsg");
+		
+		// 분할 전송 시 에러체크는 별도 데이터셋으로
+		if (strErrorCode != 0) {
+			trace("[" + strErrorCode + "] " + strErrorMsg);
+			alert("[" + strErrorCode + "] " + strErrorMsg);
+			return;
+		}
+		this.Grid00.vscrollbar.set_pos(0);
+		//trace(this.dsList.saveXML());
+		//this.Grid00.createFormat();
+		//trace(this.Grid00.getCurFormatString());
+		break;
+	
+	default:
+	}
+};
+
+this.dsList_onload = function(obj:nexacro.NormalDataset,e:nexacro.DSLoadEventInfo)
+{
+	//trace('dsList_onload: progressload=' + e.progressload + ', reason=' + e.reason);
+	
+	if (this.renderFlag == false) {
+		this.renderFlag = true;
+		var renderTime = new Date();
+		var elapsedTime = nexacro.round((renderTime - this.startTime)/1000, 3);
+		this.Static00.set_text("First Rendering Time: "+elapsedTime+" sec");
+		this.setWaitCursor(false, true);
+	}
+	
+	if (this.Grid00.binddataset == '' && e.reason == 0)
+		this.Grid00.set_binddataset('dsList');
+		
+	if (!this.Grid00.enableredraw && e.reason == 0)
+		this.Grid00.set_enableredraw(true);
+};
+
+
+this.form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.ChkProgressLoad.set_value(nexacro._use_progress_data);
+	this.ChkArrayBuffer.set_value(nexacro._transfer_data_mode == 1);
+};
+
+this.form_ontimer = function(obj:nexacro.Form,e:nexacro.TimerEventInfo)
+{
+	if (e.timerid == 100)
+	{
+		this.killTimer(e.timerid);
+		
+		this.startTime = new Date();
+		
+		var firstRowCount = 1000;
+		nexacro._use_progress_data = !!(this.ChkProgressLoad.value);
+		nexacro._transfer_data_mode = (this.ChkArrayBuffer.value ? 1 : 0);
+		
+		var reqUrl, inParam = "", row_count = this.dsSearch.getColumn(0, "searchRowCount")|0;
+
+		switch (row_count)
+		{
+		  case 10000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-10K.ssv";
+			break;
+		  case 100000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-100K.ssv";
+			break;
+		  case 200000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-200K.ssv";
+			break;
+		  case 300000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-300K.ssv";
+			break;
+		  case 500000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-500K.ssv";
+			break;
+		  case 1000000:
+			reqUrl = "Resources::data-files/RP_92291_kopec-ui-poc-1M.ssv";
+			break;
+		  default:
+			reqUrl = "svc92291::coSysDownloadLogPoc/JdbcLargeDataList.do";
+			inParam = "input=dsSearch";
+			break;
+		}
+		
+		trace("[use_progress_data]:" + nexacro._use_progress_data);
+		trace("[transfer_data_mode]:" + nexacro._transfer_data_mode);
+		trace("Request URL:" + reqUrl + " ("+ inParam + ")");
+		this.transaction("search", reqUrl, inParam, "dsList=output dsFirstRowStatus=FirstRowStatus", "firstRowCount="+firstRowCount, "fnCallback", true, 2);
+		
+	}
+};
+
+this.ChkArrayBuffer_onclick = function(obj:nexacro.CheckBox,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>
